@@ -8,4 +8,11 @@ or
 npm install -g @vue/cli@latest
 Check Vue version to make sure the installation was successful
 vue --version
+// install and start the dependencies
+npm install
+npm run serve
 
+// build the docker image
+docker build -t vue-ui .
+// run the app
+docker run -d --name vueui -p 80:80 vue-ui
